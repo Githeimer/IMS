@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+}
+
+body {
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Form box styling */
+.form-box {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: #eee;
+}
+
+.form-box form {
+    padding: 20px;
+    background-color: beige;
+    text-align: center;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box form h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.form-box form input,
+.form-box form select,
+.form-box form option {
+    width: 100%;
+    padding: 12px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    background-color: azure;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.form-box form .form-submit-btn {
+    background-color: aquamarine;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-box form .form-submit-btn:hover {
+    background-color: lightseagreen;
+}
+
+.form-box form select {
+    background: white;
+    width: 30%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.form-box form a {
+    color: red;
+    font-weight: 600;
+}
+
+.error-message {
+    color: red;
+    transition: 0.2s ease;
+}
+
+.input-container {
+    position: relative;
+}
+
+.condition_img {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    visibility: hidden;
+}
+
+.condition_img.visibility_on{
+    visibility: visible;
+}
+
+.User_input.success {
+    border: 2px solid rgb(24, 236, 24);
+}
+
+.User_input.error {
+    border: 2px solid rgb(247, 16, 16);
+}
